@@ -19,6 +19,9 @@ def tests_sum_less_than__or_equal_zero():
 def tests_sum_if_a_and_b_are_not_equal():
   assert add_positive(5,-9)==None
 
+def tests_type_check():
+  assert type(add_positive(5,9))==int
+
 
 #now add func
 
@@ -30,3 +33,6 @@ def tests_sum_neg_number():
 
 def tests_sum_one_neg_one_positive_number():
   assert add(-3,2) == -1
+def tests_add_type_check():
+  assert type(add(3,2))==int
+
